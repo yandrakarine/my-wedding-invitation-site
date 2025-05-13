@@ -12,7 +12,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from 'react'
 
-// import confetti from 'canvas-confetti';
+import confetti from 'canvas-confetti';
 
 function App() {
   useEffect(() => {
@@ -21,11 +21,11 @@ function App() {
       once: true,
     });
 
-    //  confetti({
-    //   particleCount: 150,
-    //   spread: 80,
-    //   origin: { y: 0.6 }
-    // });
+     confetti({
+      particleCount: 150,
+      spread: 80,
+      origin: { y: 0.6 }
+    });
   }, []);
 
   const Logo = () => {
@@ -73,7 +73,7 @@ function App() {
    
     <div className='relative bg-[#ffffff] bg-[url(https://www.transparenttextures.com/patterns/paper.png)] px-4 min-h-fit max-w-[80rem] mx-auto overflow-hidden'>
   
-      <img data-aos="fade-up-right"  src={MagnoliaImg} alt="" className='absolute -top-[3%] -left-[17%] rotate-10 z-10 w-80 sm:-top-[3%] sm:-left-[12%] sm:rotate-0 sm:w-100 lg:-top-[2%] lg:-left-[8%]'/>
+      <img data-aos="fade-up-right"  src={MagnoliaImg} alt="" className='absolute -top-[3%] -left-[17%] rotate-10 z-10 w-80 sm:-top-[3%] sm:-left-[12%] sm:rotate-0 sm:w-100 lg:-top-[2%] lg:-left-[8%] xl:w-140 xl:-top-[4%] xl:-left-[7%] xl:rotate-5 xl:-translate-x-5'/>
 
     <section  data-aos="fade-up" is="logo-and-phrase" className='flex flex-col items-center justify-center gap-8 mb-8 mt-25 lg:gap-12 lg:mb-12'>
       <Logo/>
@@ -99,7 +99,7 @@ function App() {
       </p>
     </section>
 
-    <section data-aos="fade-up" className='flex flex-col items-center justify-center mb-12'>
+    <section  className='flex flex-col items-center justify-center mb-12'>
      <div className='flex justify-aroundg gap-2 px-2 max-w-2xl mb-20'>
      {buttonsContent.map((item) => {
        return( 
@@ -121,13 +121,13 @@ function App() {
       <div id='parallax_bg' className={`absolute rounded-2xl left-0 top-0 right-0 bg-fixed h-140 bg-no-repeat bg-cover bg-center bg-[url(./assets/icons/image/DSC_0035.jpg)] lg:h-150`} style={{backgroundImage: UsImg}}>
       </div>
     </section>
-    <div className='flex flex-col gap-3 mb-12 shrink-0'>
-      <span className='font-[EBGaramondRegular] pl-5 text-base text-left lg:text-2xl'>Com carinho,</span>
+    <div className='flex flex-col gap-3 mt-35 mb-12 shrink-0 2xl:mt-0'>
+      <span className='font-[EBGaramondRegular] pl-5 text-base text-left lg:text-2xl'>Aguardamos você! Com carinho,</span>
       <span className='font-[MalibuRegular] text-5xl text-[#505946] text-left pl-10 lg:text-6xl'>Yandra e Will</span>
     
     </div>
        {/* <img  src={MagnoliaImg} alt="" className='absolute bottom-[-10%] right-[-24%] rotate-190 z-20 w-120 overflow-hidden lg:right-[-4%] lg:w-180 '/> */}
-       <img  src={MagnoliaImg} alt="" className='absolute -bottom-[3%] -right-[14%] rotate-185 z-10 w-80 sm:-bottom-[3%] sm:-right-[12%] sm:w-100 lg:-bottom-[2%] lg:-right-[6%]'/>
+       <img  src={MagnoliaImg} alt="" className='absolute -bottom-[3%] -right-[14%] rotate-185 z-10 w-80 sm:-bottom-[3%] sm:-right-[12%] sm:w-100 lg:-bottom-[2%] lg:-right-[6%] xl:w-130 xl:-bottom-[4%] xl:-right-[5%] xl:rotate-180'/>
        {/* <img  src={Magnolia2Img} alt="" className='absolute -bottom-[2%] -right-[12%] rotate-180 z-20 w-70 '/> */}
 
     </div>
