@@ -117,7 +117,7 @@ function App() {
       </div>
     </section>
 
-    <section id='paralax_section' className=' bg-amber-200 relative flex min-h-[60dvh] items-center justify-center mb-10'>
+    <section id='paralax_section' className='relative flex min-h-[60dvh] items-center justify-center mb-10'>
       <div id='parallax_bg' className={`absolute rounded-2xl left-0 top-0 right-0 bg-fixed h-140 bg-no-repeat bg-cover bg-center bg-[url(./assets/icons/image/DSC_0035.jpg)] lg:h-150`} style={{backgroundImage: UsImg}}>
       </div>
     </section>
