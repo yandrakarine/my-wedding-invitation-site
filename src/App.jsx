@@ -21,11 +21,23 @@ function App() {
       once: true,
     });
 
-     confetti({
-      particleCount: 150,
-      spread: 80,
-      origin: { y: 0.6 }
-    });
+    // confetti({
+    //   particleCount: 150,
+    //   spread: 80,
+    //   origin: { y: 0.6 },
+    // });
+  }, []);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      window.scrollTo({ top: 40, behavior: "smooth" });
+
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }, 500);
+    }, 10000);
+
+    return () => clearTimeout(timeout);
   }, []);
 
   const Logo = () => {
