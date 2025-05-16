@@ -121,7 +121,7 @@ function App() {
           </p>
         </div>
 
-        <div className="flex flex-col items-center justify-center gap-6 mb-10 lg:gap-8 lg:mb-16">
+        <div className="flex flex-col items-center justify-center gap-6 mb-8 lg:gap-8 lg:mb-16">
           <p className="font-[EBGaramondRegular] text-2xl mb-4 uppercase lg:text-3xl">
             09 | Agosto | 2025
           </p>
@@ -137,10 +137,6 @@ function App() {
           </p>
         </div>
       </section>
-      <div className="transform -translate-x-1/2 text-sm text-gray-500 animate-pulse animate-bounce">
-        Role para ver mais ↓
-      </div>
-
       <section className="flex flex-col items-center justify-center mb-12">
         <div className="flex justify-aroundg gap-2 px-2 max-w-2xl mb-20">
           {buttonsContent.map((item) => {
