@@ -161,7 +161,7 @@ function App() {
           })}
         </div>
         <div className="flex items-center justify-center gap-2 animate-pulse">
-          <img src={PointIcon} alt="" className="h-7" />
+          <img src={PointIcon} alt="" className="h-7 animate-bounce" />
           <p className="font-[EBGaramondRegular] text-[#505946] text-sm text-center uppercase lg:text-base">
             clique nos icones para acessar
           </p>
