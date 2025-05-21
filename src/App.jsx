@@ -80,7 +80,7 @@ function App() {
       href: "https://noivos.casar.com/yandra-e-will#/rsvp",
     },
     {
-      title: "Sugestões de presentes",
+      title: "Lista de presentes",
       iconPath: GiftIcon,
       alt: "gift icon",
       href: "https://noivos.casar.com/yandra-e-will#/presentes",
